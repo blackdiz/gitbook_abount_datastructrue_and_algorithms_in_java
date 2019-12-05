@@ -16,7 +16,7 @@ linear probing 指線性地往後搜尋直到找到空格可以存入，比方 5
 
 在刪除時我們不能直接將資料移除就好，因為在搜尋步驟中一旦遇到空格就視為查無資料，所以如果只將資料移除就會在中間產生空格而使搜尋操作不正確。我們可以在移除資料後用特別的標示資料存入此格，這樣在新增、搜尋資料時只要遇到此標記的資料就繼續往下格移動，但如果刪除大量資料後，hash table 內會被這些無用的標記資料占據大量空間使得操作效率愈來愈低，因此許多 hash table 的實作都不允許刪除資料。
 
-Java code 請參照[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter11/linearprobe/LinearProbeHashTable.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter11/linearprobe/LinearProbeHashTable.java)
+Java code 請參照[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter11/linearprobe/LinearProbeHashTable.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter11/linearprobe/LinearProbeHashTable.java)
 
 #### Clustering
 
@@ -75,5 +75,5 @@ double hashing 的 array 長度必須是質數，否則 probe 會永遠在特定
 
 #### Java Code
 
-請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter11/doublehash/DoubleHashingHashTable.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter11/doublehash/DoubleHashingHashTable.java)
+請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter11/doublehash/DoubleHashingHashTable.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter11/doublehash/DoubleHashingHashTable.java)
 

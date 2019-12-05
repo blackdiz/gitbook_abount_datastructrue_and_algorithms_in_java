@@ -27,7 +27,7 @@ merge sort 的概念是將陣列分成兩半，分別排序後再合併，那如
 
 #### Java Code
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter6/mergesort/MergeSort.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter6/mergesort/MergeSort.java)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter6/mergesort/MergeSort.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter6/mergesort/MergeSort.java)
 
 #### Efficiency of the mergesort
 

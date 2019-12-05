@@ -6,7 +6,7 @@
 
 #### Java Code
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter7/partition/Partition.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter7/partition/Partition.java)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter7/partition/Partition.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter7/partition/Partition.java)
 
 #### Efficiency of the Partition Algorithm
 

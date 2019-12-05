@@ -87,7 +87,7 @@
 
 #### Java Code
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/com/blackdiz/algorithm/chapter4/InfixApp.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/com/blackdiz/algorithm/chapter4/InfixApp.java)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/com/blackdiz/algorithm/chapter4/InfixApp.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/com/blackdiz/algorithm/chapter4/InfixApp.java)
 
 #### Evaluating Postfix Expressions
 
@@ -111,5 +111,5 @@
 
 #### Java Code
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/com/blackdiz/algorithm/chapter4/PostFixApp.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/com/blackdiz/algorithm/chapter4/PostFixApp.java)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/com/blackdiz/algorithm/chapter4/PostFixApp.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/com/blackdiz/algorithm/chapter4/PostFixApp.java)
 

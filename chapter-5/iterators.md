@@ -21,5 +21,5 @@ list 的最前端 \(first\) 可能會改變指向的 link，比方最前端的 l
 
 #### Java Code
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/tree/master/java/chapter5/iterator](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/tree/master/java/chapter5/iterator)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/tree/master/chapter5/iterator](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/tree/master/chapter5/iterator)
 

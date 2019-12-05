@@ -70,7 +70,7 @@ left  right
 
 #### Java Code
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter7/quicksort/QuickSort1.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter7/quicksort/QuickSort1.java)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter7/quicksort/QuickSort1.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter7/quicksort/QuickSort1.java)
 
 #### Degenerates to O\(N ^ 2\) Performance
 
@@ -125,7 +125,7 @@ public int paritionIt(int left, int right, long pivot) {
 
 所以 median-of-three 不但避免使用到最大數或最小數做 pivot 造成對已排序的陣列再做排序時變成 O\(N ^ 2\) 的問題，還可以減少一些判斷式和需要 partition 的資料數。
 
-Java Code 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter7/quicksort/QuickSort2.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter7/quicksort/QuickSort2.java)
+Java Code 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter7/quicksort/QuickSort2.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter7/quicksort/QuickSort2.java)
 
 #### Handling Small Partitions
 
@@ -135,7 +135,7 @@ Java Code 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithm
 
 另一個方法是用 insertion sort 處理小於 cutoff 的子陣列，此時 cutoff 可以設定大一點的限制如: 10、20 等，不同的 cutoff 會影響效率，Knuth 的建議是 9，但並沒有一個固定的數字，何者為最優取決於 compiler、OS、硬體等許多條件，而且因為在 quicksort 省下的比較、複製步驟因為用了 insertion sort 而增加，所以增加的效率不多。
 
-Java Code 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter7/quicksort/QuickSort3.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter7/quicksort/QuickSort3.java)
+Java Code 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter7/quicksort/QuickSort3.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter7/quicksort/QuickSort3.java)
 
 #### Insertion Sort Following Quicksort
 

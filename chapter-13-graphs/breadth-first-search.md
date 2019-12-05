@@ -51,5 +51,5 @@ queue 中的 vertex 是已拜訪過但尚未拜訪它的相鄰 vertex，這和 d
 
 #### Java Code
 
-請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter13/graph/bfs/BreadthFirstSearch.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter13/graph/bfs/BreadthFirstSearch.java)
+請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter13/graph/bfs/BreadthFirstSearch.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter13/graph/bfs/BreadthFirstSearch.java)
 

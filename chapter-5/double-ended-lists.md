@@ -12,5 +12,5 @@ double-ended list 在實作 insertFirst 和 insertLast 時必須注意當 list �
 
 #### Java Code
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter5/DoubleEndedList.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter5/DoubleEndedList.java)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter5/DoubleEndedList.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter5/DoubleEndedList.java)
 
