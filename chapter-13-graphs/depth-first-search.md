@@ -62,21 +62,19 @@ stack 的內容是我們從起始 vertex 到當下所在 vertex 的路徑，隨�
 
 depth-first search 的過程就像是儘快離開起始 vertex ，只有在到達死路也就是沒有任何相鄰 vertex 時再開始往走回到起始 vertex，所以 depth 可以指從起始 vertex 起算的深度。
 
-#### Depth-First Search and Game Simulations
+## Depth-First Search and Game Simulations
 
 depth-first search 經常用到遊戲策略或類似的情境中，在遊戲中我們可以從幾個行動中選出一個執行，每次選擇都會引發後面的選項最後形成 tree 形的 graph。graph 中每個 vertex 表示一個選擇的時間點，而特定的選項則由 edge 代表進而來到下一個選擇點 vertex。
 
 比方井字遊戲中，如果我們先攻的話有 9 個可能的選項，而對手則剩下 8 個，每一次的選擇影響接下來對手可以選的選項，當對手選擇後也反過來影響我們接下來的選項，隨著遊戲進行雙方的選擇會互相影響直到格子全部填滿遊戲結束為止。
 
-當我們決定如何選擇下一步時可以想像這次的選項可能導致對手的反應為何，然後當對手選擇特定的選項，我們可能的選擇有哪些，這樣反覆進行就可以藉由預想一系列的選擇來找出最佳的路線。在像井字遊戲這種簡單的遊戲中，選項的數量不多所以可以找出到遊戲結束為止所有可能的選項路徑，我們可以用 graph 來描繪出這些路徑，用我們選擇的第一步為起始 vertex，接著會有 8 條 edge 連接到對手可能選擇的 8 個選項上，而每個選項又會有 7 條 edge 連接到我們接下來可能選擇的 7 個選項，以此類推。因為第一步時有 9 種可能的選項，最後我們會有 9  個 graph 分別代表在我們第一步的 9 個選擇下可能產生的選擇路線，這樣形成的 tree 形 graph 稱為 **game tree** 。
+當我們決定如何選擇下一步時可以想像這次的選項可能導致對手的反應為何，然後當對手選擇特定的選項，我們可能的選擇有哪些，這樣反覆進行就可以藉由預想一系列的選擇來找出最佳的路線。在像井字遊戲這種簡單的遊戲中，選項的數量不多所以可以找出到遊戲結束為止所有可能的選項路徑，我們可以用 graph 來描繪出這些路徑，用我們選擇的第一步為起始 vertex，接著會有 8 條 edge 連接到對手可能選擇的 8 個選項上，而每個選項又會有 7 條 edge 連接到我們接下來可能選擇的 7 個選項，以此類推。因為第一步時有 9 種可能的選項，最後我們會有 9 個 graph 分別代表在我們第一步的 9 個選擇下可能產生的選擇路線，這樣形成的 tree 形 graph 稱為 **game tree** 。
 
 game tree 中只有某些 path 可以到達成功的結局，當我們沿著 path 但最後到達的是失敗結局時我們就回到上一步的選擇改選取其他 path，這樣反覆嘗試直到走到成功的結局後我們就可以決定第一步要如何選擇。
 
 由上述的分析可以看到即使是在簡單的遊戲中，選擇路徑的數量仍然相當多，如果忽略掉重複路徑的情況下會有 9 \* 8 \* 7 \* 6 \* 5 \* 4 \* 3 \* 2 \* 1 = 362,880 條路徑，如果是像棋類遊戲的話連超級電腦也無法計算到遊戲結局的情況，所以它們只能計算到一定的深度後估算當下有的最佳路徑。
 
-#### Java Code
+## Java Code
 
 請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter13/graph/dfs/DepthFirstSearch.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter13/graph/dfs/DepthFirstSearch.java)
-
-
 

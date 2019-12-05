@@ -10,7 +10,7 @@ double-ended list 在實作 insertFirst 和 insertLast 時必須注意當 list �
 
 然而 double-ended list 因為 last 只指向最末端，但刪除最末端 link 時要前一個 link 以讓 last 可以指向新的最末端 link，因此在實作 deleteLast 時仍須遍歷整個 list 找到最末端的前一個 link。
 
-#### Java Code
+## Java Code
 
 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter5/DoubleEndedList.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter5/DoubleEndedList.java)
 

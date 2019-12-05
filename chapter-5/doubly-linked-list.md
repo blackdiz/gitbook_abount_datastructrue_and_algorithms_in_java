@@ -13,7 +13,7 @@ class Link {
 
 doubly linked list 的缺點是在維護 link 時比較麻煩，必須維護 4 個參照: 前一個 link 的 next、目前新 link 的 next、previous和原先位置的 previous。
 
-#### Java Code
+## Java Code
 
 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter5/DoublyLinkedList.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter5/DoublyLinkedList.java)
 

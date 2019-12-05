@@ -2,7 +2,7 @@
 
 **separate chaining** 是在 array 中放 linked list，當有 collision 時直接新增在該 index 的 linked list 末端。
 
-#### Load Factors
+## Load Factors
 
 **load factor** 指 hash table 的元素數和容量的比例，使用 separate chaining 的話，因為每個 array 的格子裡的 list 可以新增 N 個元素，所以 load factor 可以大於 1。
 
@@ -12,11 +12,11 @@
 
 使用 open addressing 時，當 load factor 達到 1 / 2 或 2 / 3 左右時，效率就會下降。但 separate chaining 即使在 load factor 大於 1 也不會影響效率太多，所以當很難預測會放入多少資料時，separate chaining 是比較穩健的機制。
 
-#### Table Size
+## Table Size
 
 不像 double hashing，separate 因為沒有 probe，所以 array 長度並不要求必須是質數，但另一方面，當 array 長度不是質數時，某些 key 的分布情況會導致 cluster 出現。
 
-#### Buckets
+## Buckets
 
 Data Structures and Algorithms in Java 的定義：
 
@@ -24,9 +24,9 @@ Data Structures and Algorithms in Java 的定義：
 
 wiki 的定義：
 
-array 中每一格即稱為 bucket，open adresing 的 bucket 儲存 key 和資料，而 separate chaining 儲存 linked list  的 reference。
+array 中每一格即稱為 bucket，open adresing 的 bucket 儲存 key 和資料，而 separate chaining 儲存 linked list 的 reference。
 
-#### Java Code
+## Java Code
 
 請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter11/hashchain/HashChainHashTable.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter11/hashchain/HashChainHashTable.java)
 

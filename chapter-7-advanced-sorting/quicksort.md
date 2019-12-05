@@ -2,7 +2,7 @@
 
 C.A.R. Hoare 在 1962 年發現 **quicksort**，是最流行的排序演算法，因為在大多數情況下，它是最快的排序法，時間複雜度為 O\(N \* logN\)\(不過這僅限於在記憶中排序時，如果是對硬碟上的資料排序那其他的演算也許會更好\)，基本上 quicksort 的做法是對陣列做 partition，分成大於 pivot 的一組，小於 pivot 的一組，此時可以看到陣列有一定程度的順序，接著再分別對兩組做 partition，這樣兩邊就又會呈現出順序，如此類推，直到 partition 的分組中只有一個元素不需要再做 partition 為止。
 
-#### The Quicksort Algorithm
+## The Quicksort Algorithm
 
 quicksort 的簡化程式範例如下:
 
@@ -25,7 +25,6 @@ public void recQuickSort(int left, int right) {
         recQuickSort(partition + 1, right);
     }
 }
-
 ```
 
 可以看出 quicksort 基本上有 3 個步驟:
@@ -47,7 +46,7 @@ recQuickSort 的參數`left`、`right`定出了要做 partition 的陣列的左�
 left  right
 ```
 
-#### Choosing a Pivot Value
+## Choosing a Pivot Value
 
 我們在挑選 pivot 時可以先嘗試下列幾點想法:
 
@@ -68,11 +67,11 @@ left  right
 3 27 12 36 94 89 78 42 50 63
 ```
 
-#### Java Code
+## Java Code
 
 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter7/quicksort/QuickSort1.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter7/quicksort/QuickSort1.java)
 
-#### Degenerates to O\(N ^ 2\) Performance
+## Degenerates to O\(N ^ 2\) Performance
 
 pivot 最理想的情況應該是位於 partition 後的中間，這樣分組後的子陣列剛好一半小於 pivot，一半大於 pivot，這樣是最佳情況。如果子陣列有一邊的長度較長，那較長的那邊必須做更多次的 partition，因此效率就會下降。
 
@@ -82,7 +81,7 @@ pivot 最理想的情況應該是位於 partition 後的中間，這樣分組後
 
 因此每次挑選最右邊的元素做為 pivot 的策略在資料大致隨機分布時沒什麼問題，但當資料已正排序或倒序時就不是很好的方法。
 
-#### Median-of-Three Partitioning
+## Median-of-Three Partitioning
 
 我們可以遍歷整個陣列後找到中位數做為 pivot，但這樣效率不好，尋找中位數耗費的時間可能比排序還長。
 
@@ -92,7 +91,6 @@ pivot 最理想的情況應該是位於 partition 後的中間，這樣分組後
 44 2 3 54 86 23 48 50 29
 ^          ^           ^
 // 用 44、86、29 這三個數比較，所以中位數為 44，pivot 即為 44
-
 ```
 
 這樣做比遍歷後找出中位數要快上許多，同時也避免用到最大或最小數做為 pivot 的問題，因為至少一定有一個數比 pivot 大，也一定有一個數比 pivot 小。
@@ -127,25 +125,25 @@ public int paritionIt(int left, int right, long pivot) {
 
 Java Code 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter7/quicksort/QuickSort2.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter7/quicksort/QuickSort2.java)
 
-#### Handling Small Partitions
+## Handling Small Partitions
 
 如果使用 median-of-three 方法，當子陣列的元素少於或等於 3 時就無法再用 quicksort 對其排序，3 在這裡稱作 **cutoff** ，之前的程式碼在這種情況下我們直接對 該 3 個元素比較大小做排序。
 
-#### Using an Insertion Sort for Small Partitions
+## Using an Insertion Sort for Small Partitions
 
 另一個方法是用 insertion sort 處理小於 cutoff 的子陣列，此時 cutoff 可以設定大一點的限制如: 10、20 等，不同的 cutoff 會影響效率，Knuth 的建議是 9，但並沒有一個固定的數字，何者為最優取決於 compiler、OS、硬體等許多條件，而且因為在 quicksort 省下的比較、複製步驟因為用了 insertion sort 而增加，所以增加的效率不多。
 
 Java Code 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter7/quicksort/QuickSort3.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter7/quicksort/QuickSort3.java)
 
-#### Insertion Sort Following Quicksort
+## Insertion Sort Following Quicksort
 
 有些專家建議另一種方式是完全使用 quicksort，小於 cutoff 的子陣列先不處理，等到 quicksort 結束後，再做一次 insertion sort。因為 insertion sort 對於幾乎排序好做排序的效率好\(如 shellsort 的原理\)，所以這樣做理論上也可以增加 quicksort 整體的排序效率，但具體效果還是依不同環境而需要做測試。
 
-#### Removing Recursion
+## Removing Recursion
 
 許多人會建議不用遞迴的方式實作 quicksort，這樣必須把每次子陣列的左右邊界記在一個 stack 中，然後再用迴圈讀出來做 partition，如此可以消除掉遞迴呼叫 method 耗費的資源。對於舊的 compiler 和電腦架構理論上這樣做會比較快，但是對於現今的系統對於處理呼叫 method 的資源耗費通常掌握得較此，因此無法肯定 是否真能增加效率。
 
-#### Efficiency of Quicksort
+## Efficiency of Quicksort
 
 由於 quicksort 每次遞迴時都會將子陣列分成兩半，在平均劃分的情況下 N 個元素會劃分 logN 次，而每次劃分完針對子陣列的 partition 的時間複雜度是 O\(N\) \(請參照 [Partitioning](partitioning.md#efficiency-of-the-partition-algorithm)\)，因此 quicksort 的時間複雜度為 O\(N \* logN\)。
 

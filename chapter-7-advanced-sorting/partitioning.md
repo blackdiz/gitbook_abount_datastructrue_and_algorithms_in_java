@@ -4,11 +4,11 @@
 
 我們可以分別在最左和最右邊用一個指標標示目前取到的元素位置，然後開始往中間遍歷，當左邊指標取到的元素大於 pivot，而右邊指標元素取到的元素小於 pivot 時，就將兩者資料交換，接著繼續往中間遍歷直到兩個指標交會時表示整個陣列的資料都已經和 pivot 比較過可以結束劃分。
 
-#### Java Code
+## Java Code
 
 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter7/partition/Partition.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter7/partition/Partition.java)
 
-#### Efficiency of the Partition Algorithm
+## Efficiency of the Partition Algorithm
 
 劃分時，最左和最右邊的指標會往中間遍歷取出元素和 pivot 比較，直到兩者交會剛好遍歷完所有元素一次，所以比較次數為 N 次，時間複雜度為 O\(N\)，不論資料如何分佈都不影響比較的時間複雜度。
 

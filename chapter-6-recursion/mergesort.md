@@ -2,7 +2,7 @@
 
 **merge sort** 在速度上比 bubble sort、insertion sort 和 selection sort 快上許多，後三者的時間複雜度為 O\(N^2\)，而 merge sort 的時間複雜度是 O\(N \* logN\)，但它的缺點是需要額外和欲排序的元素總量大小相等的記憶體空間。
 
-#### Merging Two Sorted Arrays
+## Merging Two Sorted Arrays
 
 merge sort 的作法是合併兩個已排序的陣列 A、B 產生新的已排序陣列 C，假設 A 陣列有 23、47、81、95 四個元素，B陣列有 7、14、39、55、62、74 六個元素，則排序時每次取 A、B 陣列中最小數字相比，較小的就放入 C 陣列中，然後重複直到所有數字比完或其中一個陣列已比過所有元素時就不需再進行相比直接把另一個陣列中剩餘尚未比過的元素直接放入 C 陣列中，以表格表示的話:
 
@@ -19,17 +19,17 @@ merge sort 的作法是合併兩個已排序的陣列 A、B 產生新的已排�
 | 9 | B 已無元素，不用比較 | 將 81 從 A 放入 C |
 | 10 | B 已無元素，不用比較 | 將 95 從 A 放入 C |
 
-#### Sorting by Merging
+## Sorting by Merging
 
 merge sort 的概念是將陣列分成兩半，分別排序後再合併，那如何排序那兩半呢? 就是把分割後的陣列再分成兩半，排序後再合併回來，以此類推會一直分割，直到只剩一個元素就不需排序後再合併回去。
 
 在遞迴版本的 merge sort 中，我們不是從既存的兩個陣列合併成一個，而是從要排序的陣列一直分割到不用排序為止，再合併排序回原本的陣列中。
 
-#### Java Code
+## Java Code
 
 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter6/mergesort/MergeSort.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter6/mergesort/MergeSort.java)
 
-#### Efficiency of the mergesort
+## Efficiency of the mergesort
 
 mergesort 的時間複雜度來自分割陣列的次數和比較的次數。
 

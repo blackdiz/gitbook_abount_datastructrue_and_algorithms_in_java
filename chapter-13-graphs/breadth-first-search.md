@@ -9,11 +9,11 @@ vertex A 是起始 vertex，所以我們先拜訪它並標示我們現在的位�
 > 規則 1
 >
 > 拜訪相鄰目前所在 vertex 的下一個尚未拜訪過的 vertex，標記成已拜訪並新增到 queue 中
-
+>
 > 規則 2
 >
 > 當已經沒有相鄰且未拜訪過的 vertex 時，取出 queue 中的 vertex ，移動到該 vertex。
-
+>
 > 規則 3
 >
 > 當 queue 為空時就完成 breadth-first search
@@ -49,7 +49,7 @@ queue 中的 vertex 是已拜訪過但尚未拜訪它的相鄰 vertex，這和 d
 
 因此 breadth-first search 有個有趣的特性，它首先找出所有距離起始 vertex 1 條 edge 距離的 vertex，接著是距離 2 條 edge 的，然後是距離 3 條 edge 的，以此類推慢慢增加距離。當想要找出從起始 vertex 到某特定 vertex 的最短距離時，這個特性就很有用，因為當我們拜訪到特定的 vertex 時，我們可以知道目前的 path 就是最短距離。
 
-#### Java Code
+## Java Code
 
 請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter13/graph/bfs/BreadthFirstSearch.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter13/graph/bfs/BreadthFirstSearch.java)
 

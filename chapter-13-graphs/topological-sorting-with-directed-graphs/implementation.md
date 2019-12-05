@@ -9,9 +9,7 @@
 
 而刪除 vertex 時則是將 vertex 從儲存 vertex 的 array 中刪除，同時把位置在它左方 \(index 較小的方向\) 的 vertex 向右移動以填滿空格。而 adjacency matrix 中也要刪除掉被刪除的 vertex 所在的行列並且把其他的 vertex 向右向下 \(matrix 中的二維 array 都往 index 大的方向\) 移動填補空格。此外，如果是用 adjacency list 的話這個步驟效率會比較好。
 
-#### Java Code
+## Java Code
 
 請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter13/graph/topologicalsort/TopologicalSort.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter13/graph/topologicalsort/TopologicalSort.java)
-
-
 
