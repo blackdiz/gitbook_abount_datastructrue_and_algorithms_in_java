@@ -76,7 +76,7 @@ game tree 中只有某些 path 可以到達成功的結局，當我們沿著 pat
 
 #### Java Code
 
-請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/src/main/java/chapter13/graph/dfs/DepthFirstSearch.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/src/main/java/chapter13/graph/dfs/DepthFirstSearch.java)
+請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter13/graph/dfs/DepthFirstSearch.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter13/graph/dfs/DepthFirstSearch.java)
 
 
 

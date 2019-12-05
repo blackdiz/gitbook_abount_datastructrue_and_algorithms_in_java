@@ -4,7 +4,7 @@
 
 #### Java Code
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/src/main/java/chapter5/SortedList.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter5/SortedList.java)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter5/SortedList.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter5/SortedList.java)
 
 #### Efficiency of Sorted Linked Lists
 
@@ -24,5 +24,5 @@ sorted list 可以用來做為頗有效率的排序機制，假設現在有一�
 
 #### Java Code
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/src/main/java/chapter5/ListInsertionSortApp.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter5/ListInsertionSortApp.java)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter5/ListInsertionSortApp.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter5/ListInsertionSortApp.java)
 

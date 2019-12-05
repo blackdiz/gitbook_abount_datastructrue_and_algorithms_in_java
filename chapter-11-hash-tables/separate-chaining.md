@@ -28,5 +28,5 @@ array 中每一格即稱為 bucket，open adresing 的 bucket 儲存 key 和資�
 
 #### Java Code
 
-請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/src/main/java/chapter11/hashchain/HashChainHashTable.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/src/main/java/chapter11/hashchain/HashChainHashTable.java)
+請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter11/hashchain/HashChainHashTable.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter11/hashchain/HashChainHashTable.java)
 

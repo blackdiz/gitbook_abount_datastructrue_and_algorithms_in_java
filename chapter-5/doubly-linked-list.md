@@ -15,5 +15,5 @@ doubly linked list 的缺點是在維護 link 時比較麻煩，必須維護 4 �
 
 #### Java Code
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/src/main/java/chapter5/DoublyLinkedList.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/src/main/java/chapter5/DoublyLinkedList.java)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter5/DoublyLinkedList.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter5/DoublyLinkedList.java)
 

@@ -20,5 +20,5 @@ depth-first search 可以產生  minimum spanning tree 是因為它會拜訪所�
 
 #### Java Code
 
-請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/src/main/java/chapter13/graph/mst/MinimumSpanningTrees.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/src/main/java/chapter13/graph/mst/MinimumSpanningTrees.java)
+請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter13/graph/mst/MinimumSpanningTrees.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter13/graph/mst/MinimumSpanningTrees.java)
 

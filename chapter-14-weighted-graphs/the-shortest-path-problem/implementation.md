@@ -62,5 +62,5 @@ Dijkstra 演算法一開始會從 adjacency matrix 中將起始 vertex 代表的
 
 #### Java Code
 
-請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/src/main/java/chapter13/graph/dijkstra/ShortestPath.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/tree/master/chapter13/graph/dijkstra)
+請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter13/graph/dijkstra/ShortestPath.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/tree/master/chapter13/graph/dijkstra)
 

@@ -11,7 +11,7 @@
 
 #### Java Code
 
-請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/src/main/java/chapter13/graph/topologicalsort/TopologicalSort.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/src/main/java/chapter13/graph/topologicalsort/TopologicalSort.java)
+請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter13/graph/topologicalsort/TopologicalSort.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter13/graph/topologicalsort/TopologicalSort.java)
 
 
 

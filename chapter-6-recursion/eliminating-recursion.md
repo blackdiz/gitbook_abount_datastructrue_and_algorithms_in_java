@@ -8,7 +8,7 @@
 
 #### Simulating a Recursive Method
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/src/main/java/chapter6/stacksimulation/StackTriangleApp.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/src/main/java/chapter6/stacksimulation/StackTriangleApp.java)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter6/stacksimulation/StackTriangleApp.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter6/stacksimulation/StackTriangleApp.java)
 
 #### What Does This Prove
 

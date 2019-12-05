@@ -20,13 +20,13 @@ shellsort 的作法是先對大間隔的元素做 insertion sort，排序完後�
 
 2 10 1 9 4 5 8 6 7 3 // 再對第 1、5、9 個元素排序
   ^        ^       ^
-  
+
 2 3 1 9 4 5 8 6 7 10 // 對第 2、6 個元素排序
     ^       ^
-     
+
 2 3 1 9 4 5 8 6 7 10 // 對第 3、7 個元素排序
       ^       ^
-      
+
 2 3 1 6 4 5 8 9 7 10 // 因第 4 個元素在第一步已排過，所以結束
 ```
 
@@ -63,7 +63,7 @@ $$
 
 #### Java Code
 
-請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/src/main/java/chapter7/shellsort/Shellsort.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/src/main/java/chapter7/shellsort/Shellsort.java)
+請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/java/chapter7/shellsort/Shellsort.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/java/chapter7/shellsort/Shellsort.java)
 
 #### Efficiency of the Shellsort
 
