@@ -1,6 +1,6 @@
 # Cycles and Trees
 
-有一種 topological sorting 無法處理的狀況是 graph 中出現0 **cycles** ，cycle 指 path 的終點會回到起點的情況：
+有一種 topological sorting 無法處理的狀況是 graph 中出現 **cycles** ，cycle 指 path 的終點會回到起點的情況：
 
 ![](../../.gitbook/assets/cycle_graph.svg)
 
