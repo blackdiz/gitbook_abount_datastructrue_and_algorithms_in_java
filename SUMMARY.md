@@ -116,3 +116,7 @@
 * [The All-Pairs Shortest Problem](chapter-14-weighted-graphs/the-all-pairs-shortest-problem.md)
 * [Efficiency](chapter-14-weighted-graphs/efficiency.md)
 
+## Chapter 15 When to Use What
+
+* [General-Purpose Data Structures](chapter-15-when-to-use-what/general-purpose-data-structures.md)
+
