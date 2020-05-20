@@ -25,7 +25,7 @@
 * [Factorials](chapter-6-recursion/factorials.md)
 * [Anagrams](chapter-6-recursion/anagrams.md)
 * [The Tower of Hanoi](chapter-6-recursion/the-tower-of-hanoi.md)
-* [mergesort](chapter-6-recursion/mergesort.md)
+* [Mergesort](chapter-6-recursion/mergesort.md)
 * [Eliminating Recursion](chapter-6-recursion/eliminating-recursion.md)
 * [Some Interesting Recursive Applications](chapter-6-recursion/some-interesting-recursive-applications.md)
 

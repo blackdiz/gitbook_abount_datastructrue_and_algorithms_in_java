@@ -1,4 +1,4 @@
-# mergesort
+# Mergesort
 
 **merge sort** 在速度上比 bubble sort、insertion sort 和 selection sort 快上許多，後三者的時間複雜度為 O\(N^2\)，而 merge sort 的時間複雜度是 O\(N \* logN\)，但它的缺點是需要額外和欲排序的元素總量大小相等的記憶體空間。
 
