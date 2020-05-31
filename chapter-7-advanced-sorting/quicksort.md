@@ -71,7 +71,7 @@ left  right
 
 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter7/quicksort/QuickSort1.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter7/quicksort/QuickSort1.java)
 
-## Degenerates to O\(N ^ 2\) Performance
+## Degenerates to $$O(N ^ 2)$$ Performance
 
 pivot 最理想的情況應該是位於 partition 後的中間，這樣分組後的子陣列剛好一半小於 pivot，一半大於 pivot，這樣是最佳情況。如果子陣列有一邊的長度較長，那較長的那邊必須做更多次的 partition，因此效率就會下降。
 
