@@ -1,6 +1,6 @@
 # Quicksort
 
-C.A.R. Hoare 在 1962 年發現 **quicksort**，是最流行的排序演算法，因為在大多數情況下，它是最快的排序法，時間複雜度為 O\(N \* logN\)\(不過這僅限於在記憶中排序時，如果是對硬碟上的資料排序那其他的演算也許會更好\)，基本上 quicksort 的做法是對陣列做 partition，分成大於 pivot 的一組，小於 pivot 的一組，此時可以看到陣列有一定程度的順序，接著再分別對兩組做 partition，這樣兩邊就又會呈現出順序，如此類推，直到 partition 的分組中只有一個元素不需要再做 partition 為止。
+C.A.R. Hoare 在 1962 年發現 **quicksort**，是最流行的排序演算法，因為在大多數情況下，它是最快的排序法，時間複雜度為 $$O(N \times logN)$$ \(不過這僅限於在記憶體中排序時，如果是對硬碟上的資料排序那其他的演算也許會更好\)，基本上 quicksort 的做法是對陣列做 partition，分成大於 pivot 的一組，小於 pivot 的一組，此時可以看到陣列有一定程度的順序，接著再分別對兩組做 partition，這樣兩邊就又會呈現出順序，如此類推，直到 partition 的分組中只有一個元素不需要再做 partition 為止。
 
 ## The Quicksort Algorithm
 
@@ -121,7 +121,7 @@ public int paritionIt(int left, int right, long pivot) {
 
 此外，因為排序後，最右和最左邊的數等於已經做完 partition 分到它們正確的子陣列中，所以不用加入 partition 的陣列中，因此 partition 開始比較的位置可以設為最左邊 index + 1和最右邊 index + 1。
 
-所以 median-of-three 不但避免使用到最大數或最小數做 pivot 造成對已排序的陣列再做排序時變成 O\(N ^ 2\) 的問題，還可以減少一些判斷式和需要 partition 的資料數。
+所以 median-of-three 不但避免使用到最大數或最小數做 pivot 造成對已排序的陣列再做排序時變成 $$O(N ^ 2)$$ 的問題，還可以減少一些判斷式和需要 partition 的資料數。
 
 Java Code 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter7/quicksort/QuickSort2.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter7/quicksort/QuickSort2.java)
 
@@ -141,9 +141,9 @@ Java Code 請參照: [https://github.com/blackdiz/datastructrues\_and\_algorithm
 
 ## Removing Recursion
 
-許多人會建議不用遞迴的方式實作 quicksort，這樣必須把每次子陣列的左右邊界記在一個 stack 中，然後再用迴圈讀出來做 partition，如此可以消除掉遞迴呼叫 method 耗費的資源。對於舊的 compiler 和電腦架構理論上這樣做會比較快，但是對於現今的系統對於處理呼叫 method 的資源耗費通常掌握得較此，因此無法肯定 是否真能增加效率。
+許多人會建議不用遞迴的方式實作 quicksort，這樣必須把每次子陣列的左右邊界記在一個 stack 中，然後再用迴圈讀出來做 partition，如此可以消除掉遞迴呼叫 method 耗費的資源。對於舊的 compiler 和電腦架構理論上這樣做會比較快，但是對於現今的系統對於處理呼叫 method 的資源耗費通常掌握得較好，因此無法肯定是否真能增加效率。
 
 ## Efficiency of Quicksort
 
-由於 quicksort 每次遞迴時都會將子陣列分成兩半，在平均劃分的情況下 N 個元素會劃分 logN 次，而每次劃分完針對子陣列的 partition 的時間複雜度是 O\(N\) \(請參照 [Partitioning](partitioning.md#efficiency-of-the-partition-algorithm)\)，因此 quicksort 的時間複雜度為 O\(N \* logN\)。
+由於 quicksort 每次遞迴時都會將子陣列分成兩半，在平均劃分的情況下 $$N$$ 個元素會劃分 $$logN$$ 次，而每次劃分完針對子陣列的 partition 的時間複雜度是 $$O(N)$$ \(請參照 [Partitioning](partitioning.md#efficiency-of-the-partition-algorithm)\)，因此 quicksort 的時間複雜度為 $$O(N \times logN)$$。
 
