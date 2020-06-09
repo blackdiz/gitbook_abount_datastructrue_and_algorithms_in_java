@@ -1,10 +1,10 @@
 # Priority Queue
 
-Priority queue內的元素是有序的, 比方由數字小到大的排序, 而最小的永遠在第一個位置，所以在插入元素時必須按順序放在正確的index上。
+Priority queue 內的元素是有序的, 比方由數字小到大的排序, 而最小的永遠在第一個位置，所以在插入元素時必須按順序放在正確的index上。
 
-Priority queue可以用在許多情境上，例如可以在graph中找到minimum spanning tree\(最小生成樹\)，或者在多工系統中，待執行的程序可放在一個priority queue中，這樣有最高優先權的程序就可以被優先執行。
+Priority queue 可以用在許多情境上，例如可以在 graph 中找到 minimum spanning tree\( 最小生成樹\)，或者在多工系統中，待執行的程序可放在一個 priority queue 中，這樣有最高優先權的程序就可以被優先執行。
 
-為了提高插入元素時的效率，priority queue經常使用heap實作，但此章節先使用array實作，因為它比較簡單。
+為了提高插入元素時的效率，priority queue 經常使用 heap 實作，但此章節先使用 array 實作，因為它比較簡單。
 
 #### 程式碼
 
@@ -98,6 +98,6 @@ public class PriorityQueue {
 
 #### 時間複雜度
 
-* 插入在最糟的情況下必須比較完queue內的所有元素，故複雜度為O\(N\)
-* 刪除因為只須取出目前queue最末端的元素，因此複雜度為O\(1\)
+* 插入在最糟的情況下必須比較完 queue 內的所有元素，故複雜度為 $$O(N)$$
+* 刪除因為只須取出目前 queue 最末端的元素，因此複雜度為 $$O(1)$$
 
