@@ -1,6 +1,6 @@
 # Removal
 
-刪除表示移除含有最大 key 的 node，而這個 node 一定是 root 所以要移除它很容易，因為 root 永遠都是 array 中第 1 個元素，所以 `max node = heap array[0]` 。
+刪除操作表示移除含有最大 key 的 node，而這個 node 一定是 root 所以要移除它很容易，因為 root 永遠都是 array 中第 1 個元素，所以 `max node = heap array[0]` 。
 
 問題在於移除 root 後，heap tree 就不再是完整樹，它現在出現 1 個空格。我們可以直接把所有元素往前移動 1 格來填滿空格，但有比較快的方法：
 
