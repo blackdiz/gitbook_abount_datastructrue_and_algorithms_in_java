@@ -8,7 +8,7 @@ node 的數量和表示路徑的 2 進位數之間有一些關聯，假設 root 
 
 當找到目標 node 後，在向上或向下移動時 tree 的結構不會改變，所以不需要真的移動 node，可以直接將資料複製到下個位置的 node 即可，這樣就不必為了移動而重新連結 parent 和 child。此外，因為向上移動時需要 parent 的資訊，所以 node 需要有 parent 的 reference。
 
-tree heap 的操作的時間複雜度為 O\(logN\)，和用 array 實作相同，多數的時間都花費在向上和向下移動的演算法中。
+tree heap 的操作的時間複雜度為 $$O(logN)$$，和用 array 實作相同，多數的時間都花費在向上和向下移動的演算法中。
 
 
 
