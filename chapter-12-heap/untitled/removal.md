@@ -6,25 +6,24 @@
 
 1. 移除 root
 2. 將最末端的 node 移動到原 root
-3. 將該最末端的 node 往後移動直到介於 key 比它大和 key 比它小的 node 之間的位置
+3. 將新的 root 往後移動直到介於 key 比它大和 key 比它小的 node 之間的位置
 
 步驟 2 補上 root 的空格將 heap tree 回復到完整樹的狀態，而步驟 3 則保持 heap condition 的每個 node 都要比它的 child 大的要求。
 
 在步驟 3 移動 node 時，是往 child 中 key 較大的 child 那邊交換位置，因為如果往 key 較小的 child 交換，則交換後 key 較小的 child 的會變成較大 key 的 child 的 parent 而違反 heap condition：
 
 ```text
+// 假設移除原 root 後, 從最末端移動過來的新 root 是 30
   30
  /  \
 60  70
 
 // 交換時，70 較大所以和 70 交換位置
-
   70
  /  \
 60  30
 
 // 如果和 60 交換，則交換後 60 變成 70 的 parent 違反 heap condition
-
   60
  /  \
 30  70
