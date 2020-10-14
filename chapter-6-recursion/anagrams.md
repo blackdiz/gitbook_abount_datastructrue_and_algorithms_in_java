@@ -17,3 +17,5 @@
 2. 將所有字母左移一位，首字則移到最右
 3. 重複 N 次，直到回到原本的順序
 
+程式碼請參照：[https://github.com/blackdiz/datastructrues\_and\_algorithms\_in\_java/blob/master/chapter6/anagram/Anagrams.java](https://github.com/blackdiz/datastructrues_and_algorithms_in_java/blob/master/chapter6/anagram/Anagrams.java)
+
