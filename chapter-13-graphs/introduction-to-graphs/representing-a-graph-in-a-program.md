@@ -56,14 +56,20 @@ adjacency matrix \(相鄰矩陣\) 是用二維 array 的元素表示 edge。如�
 
 另一種方式是 adjacency list \(相鄰列表\)，其中 list 表示 linked list。adjacency list 是一個儲存 list 的 array \(或者是用 list 儲存 list\)，每個 list 的元素表示相鄰的 vertex：
 
-| Vertex | List |
+| Array of vertex | referece to List |
 | :--- | :--- |
 | A | B -&gt; C -&gt; D |
 | B | A -&gt; D |
 | C | A |
 | D | A -&gt; B |
 
-在 **non-directed graph** \(無向圖\) 時，表格中的 `->` 表示 linked list 中的連結方向，每個 link 代表一個 vertex。雖然表格中 list 內的 vertex 有順序但實際上並不需要排序。同時 list 內的連結不是 path ，vertex A 對應的 `B -> C -> D` 表示 A 和 B、C、D 相鄰而非由 A 到 D 的 path。
+，表格中的 `->` 表示 linked list 中的連結方向，每個 link 代表一個 vertex。雖然表格中 list 內的 vertex 有順序但實際上並不需要排序。同時 list 內的連結不是 path ，vertex A 對應的 `B -> C -> D` 表示 A 和 B、C、D 相鄰而非由 A 到 D 的 path，在 **non-directed graph** \(無向圖\) 時 A 和 B、C、D 相鄰但沒有方向，而 A 的 List 中有 B 和 B 的 List 中的 A 是表示同一條 edge，畫成圖的話如下：
+
+![](../../.gitbook/assets/undirected_adjacency_list.svg)
+
+而在 **directed graph** \(有向圖\) 時則表示有由 A 到 B、A 到 C 、A 到 D 的 3 條有方向的 edge，，而 A 的 List 中有 B 和 B 的 List 中的 A 因為有方向的差異，所以是表示 A -&gt; B 和 B -&gt; A 兩條不同的 edge，畫成圖的話如下：
+
+![](../../.gitbook/assets/directed_adjacency_list.svg)
 
 使用 adjacency list 的話，空間複雜度為 $$O(V + E)$$，$$V$$為 vertex 數而 $$E$$為 edge 數。
 
