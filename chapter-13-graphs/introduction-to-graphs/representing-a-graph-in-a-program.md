@@ -57,7 +57,7 @@ adjacency matrix \(相鄰矩陣\) 是用二維 array 的元素表示 edge。如�
 另一種方式是 adjacency list \(相鄰列表\)，其中 list 表示 linked list。adjacency list 是一個儲存 list 的 array \(或者是用 list 儲存 list\)，每個 list 的元素表示相鄰的 vertex：
 
 | Array of vertex | referece to List |
-| :--- | :--- |
+| :---: | :--- |
 | A | B -&gt; C -&gt; D |
 | B | A -&gt; D |
 | C | A |
